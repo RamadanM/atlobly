@@ -7,4 +7,13 @@ app.get("/",function(req,resp){
 })
 
 
+app.post("/home",function(req,resp){
+  resp.sendFile(__dirname+"/views/regestration/home.html");
+})
+
+app.get("/signup",function(req,resp){
+  resp.sendFile(__dirname+"/views/regestration/signup.html");
+})
+
+
 app.listen(8090);
